@@ -14,13 +14,11 @@
  * @package WordPress
  */
 
-define('WP_REDIS_HOST', 'wordpress.r6bxaf.0001.usw2.cache.amazonaws.com');
- 
-define('WP_HOME','http://wordpress-1237507421.us-west-2.elb.amazonaws.com');
-define('WP_SITEURL','http://wordpress-1237507421.us-west-2.elb.amazonaws.com');
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('WP_REDIS_HOST', 'wordpress.r6bxaf.0001.usw2.cache.amazonaws.com');
+
+
 define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
@@ -30,7 +28,7 @@ define('DB_USER', 'wordpress');
 define('DB_PASSWORD', 'wordpress');
 
 /** MySQL hostname */
-define('DB_HOST', 'wordpress.claofdqzdaqw.us-west-2.rds.amazonaws.com');
+define('DB_HOST', 'wordpress.claofdqzdaqw.us-west-2.rds.amazonaws.com:3306');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -47,14 +45,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '-wW!cjwNK$88xg(tV}Kt|`uq{CP&?[Qb+H+r7KTap1L(p:M;q:,QegW9bD<`K5_3');
+define('SECURE_AUTH_KEY',  'psK=vPdi i%bBo0MgG_vL!|U|x8p74Ws~7(4|Y+CTAQ+ Obp>2n =_`uP9hjx$*m');
+define('LOGGED_IN_KEY',    'u$9-$Hz]Kn~Egp2kQS!1Y!-CT!oc!VfKS&f,wYl1AvU?In4$+eg+3l:$TN~2Yb%>');
+define('NONCE_KEY',        '80@*NQ5jH3SIuT83mKJ5wH}~LWc1z|JU?+*`Gm;Tbi! aFu&S%ks#5i@Hd#XiFUn');
+define('AUTH_SALT',        '-}jT,{GscZ>O_Wq|IB;ES X^M)`Hg1EQ/<|U,|%#*mt$l((p7VvQ:2&l$q8F.tR+');
+define('SECURE_AUTH_SALT', 'aH`S0H|>#y/bz5-O7?{zcycq-rY?D$3hwGbc0}2^UjrZ +*@hz|Vh,-m=}I+(i_f');
+define('LOGGED_IN_SALT',   'Z4w>/Z%PWg]Hugmm!,7 =*#;XKeHakE.0xlO%fc)K*1TKO|Mg~H>^93.@4HP|O(-');
+define('NONCE_SALT',       '!S![T,w:th-VH Cs;ZgI?RKh);X-(>%o$Dy2W:41^3Q}!ac3)@TtVwve0#+4u}U[');
 
 /**#@-*/
 
@@ -79,7 +77,7 @@ define('WP_DEBUG', false);
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+        define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
